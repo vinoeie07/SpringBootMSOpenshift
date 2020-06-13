@@ -1,0 +1,2 @@
+# SpringBootMSOpenshift
+SpringBootMSOpenshift
