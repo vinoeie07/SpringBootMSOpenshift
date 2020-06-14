@@ -12,6 +12,7 @@
 	<groupId>EurekaServer</groupId>
 	<artifactId>discoveryserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>Server</name>
 	<description>Demo project for Spring Boot</description>
 
