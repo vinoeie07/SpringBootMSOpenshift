@@ -12,7 +12,7 @@
 	<groupId>EurekaServer</groupId>
 	<artifactId>discoveryserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Server</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -49,7 +49,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
+				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
 					<!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! -->
 					<failOnMissingWebXml>false</failOnMissingWebXml>
@@ -76,11 +76,11 @@
 			<build>
 				<plugins>
 					<plugin>
-						<artifactId>maven-war-plugin</artifactId>
-						<version>${version.war.plugin}</version>
+						<artifactId>maven-jar-plugin</artifactId>
+						<version>${version.jar.plugin}</version>
 						<configuration>
 							<outputDirectory>deployments</outputDirectory>
-							<warName>ROOT</warName>
+							<jarName>ROOT</jarName>
 							<!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! -->
 							<failOnMissingWebXml>false</failOnMissingWebXml>
 						</configuration>
